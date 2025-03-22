@@ -137,7 +137,7 @@ if page == "Home":
     for i, book in enumerate(books):
         with cols[i % 4]:
             title, author, year, genre, read_status, cover_image = book[1:7]
-            image_path = cover_image if cover_image and os.path.exists(cover_image) else 'default_cover.png'
+            image_path = cover_image if cover_image and os.path.exists(cover_image) else 'default_image.png'
             st.image(image_path, width=120)
 
             st.markdown(f"""<div class='book-card'><b>{title}</b><br>Author:{author}<br>Year:{year}<br>Genre:{genre}<br>✅ {'Read' if read_status else 'Unread'}</div>""", unsafe_allow_html=True)
