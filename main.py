@@ -8,6 +8,9 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import base64
 
+
+print("Matplotlib and Seaborn are working!")
+
 # Ensure necessary directories exist
 if not os.path.exists("uploads"):
     os.makedirs("uploads")
